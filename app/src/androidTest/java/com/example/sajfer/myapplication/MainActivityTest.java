@@ -28,7 +28,7 @@ public class MainActivityTest extends ActivityInstrumentationTestCase2<MainActiv
     }
 
     public void test1() {
-        final String expected = activity.getString(R.string.textViewString);
+        final String expected = activity.getString(R.string.textViewString)+ "1";
         final String actual = text.getText().toString();
         assertEquals(expected, actual);
     }
